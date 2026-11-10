@@ -1,4 +1,5 @@
 FROM ubuntu:24.04
+EXPOSE 9000
 RUN apt-get update && apt-get install -y \
     lua5.1 \
     python3 \
