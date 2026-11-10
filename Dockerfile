@@ -21,4 +21,4 @@ RUN lua5.1 -v && printf 'print("luau OK")\n' > /tmp/luau_check.lua && luau /tmp/
 WORKDIR /app
 COPY . /app
 
-ENTRYPOINT ["sh", "-c", "lua5.1 docker-test-runner.lua && lua5.1 cli.lua"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
